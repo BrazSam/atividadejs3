@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+<head>
+  <title>Contador</title>
+</head>
+<body>
+    <div class="contador">
+        <button onclick="diminuir()">-</button>
+        <span id="contador">0</span>
+        <button onclick="aumentar()">+</button>
+
+        <script>
+            let contador = 0;  // Variável para o contador
+
+            // Função para aumentar o contador
+            function aumentar() {
+            contador++;
+            document.getElementById('contador').innerText = contador;
+            }
+
+            // Função para diminuir o contador
+            function diminuir() {
+            contador--;
+            document.getElementById('contador').innerText = contador;
+            }
+        </script>
+    </div>
+</body>
+</html>
